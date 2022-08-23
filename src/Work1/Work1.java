@@ -27,5 +27,17 @@ public class Work1 {
 
         float bodyMassIndex = weight/(growth * growth);
         System.out.println("Индекса массы тела " + bodyMassIndex);
+
+        //Задача №3
+
+        char [] chr = {'a','b','c','d','e'};
+
+        String str1 = String.valueOf(chr);
+        System.out.println(str1);
+
+        chr[3]= 'h';
+
+        String str2 = String.valueOf(chr);
+        System.out.println(str2);
     }
 }
