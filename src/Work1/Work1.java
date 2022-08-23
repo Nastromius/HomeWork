@@ -6,38 +6,56 @@ public class Work1 {
 
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+        //Базовый уровень
         //Задача №1
-        String hi = "                Hello ";
-        String world = " WoRld!";
-        char newLine = '\n';
+        {
+            String hi = "                Hello ";
+            String world = " WoRld!";
+            char newLine = '\n';
 
-        String nHi = hi.trim();
-        String lWord = world.toLowerCase();
-        String nWord = nHi + lWord + newLine;
+            String nHi = hi.trim();
+            String lWord = world.toLowerCase();
+            String nWord = nHi + lWord + newLine;
 
-        System.out.print(nWord.repeat(3));
+            System.out.print(nWord.repeat(3));
+        }
 
         //Задача №2
+        {
+            System.out.println("\nВведите рост в метрах. Через запятую");
+            float growth = scanner.nextFloat();
 
-        System.out.println("\nВведите рост в метрах. Через запятую");
-        float growth = scanner.nextFloat();
+            System.out.println("Введите вес");
+            float weight = scanner.nextFloat();
 
-        System.out.println("Введите вес");
-        float weight = scanner.nextFloat();
-
-        float bodyMassIndex = weight/(growth * growth);
-        System.out.println("Индекса массы тела " + bodyMassIndex);
+            float bodyMassIndex = weight / (growth * growth);
+            System.out.println("Индекса массы тела " + bodyMassIndex);
+        }
 
         //Задача №3
+        {
+            char[] chr = {'a', 'b', 'c', 'd', 'e'};
 
-        char [] chr = {'a','b','c','d','e'};
+            String str1 = String.valueOf(chr);
+            System.out.println(str1);
 
-        String str1 = String.valueOf(chr);
-        System.out.println(str1);
+            chr[3] = 'h';
 
-        chr[3]= 'h';
+            String str2 = String.valueOf(chr);
+            System.out.println(str2);
+        }
 
-        String str2 = String.valueOf(chr);
-        System.out.println(str2);
+        //Задача №4
+        {
+            for (int i = 1; i <= 100 ; i++) {
+                System.out.print(i + "a ");
+
+                if(i%10 == 0)
+                    System.out.println();
+            }
+        }
+
+
+
     }
 }
