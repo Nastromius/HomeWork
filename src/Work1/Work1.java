@@ -7,7 +7,7 @@ public class Work1 {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         //Базовый уровень
-        //Задача №1
+        /* //Задача №1
         {
             String hi = "                Hello ";
             String world = " WoRld!";
@@ -54,19 +54,19 @@ public class Work1 {
                     System.out.println();
             }
         }
-
+        */
         //Задача №5
         {
             System.out.println("Введите возраст ребёнка: ");
             int age = scanner.nextInt();
 
-            if (age < 6)
+            if (age <= 6)
                 System.out.println("Ребёнок идёт в сад");
 
-            else if (6 < age && age < 11)
+            else if (age <= 11)
                 System.out.println("Идёт в младшую школу");
 
-            else if (11 < age && age < 17)
+            else if (age <= 17)
                 System.out.println("Идёт в среднюю школу");
 
             else
