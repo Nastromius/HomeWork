@@ -12,5 +12,14 @@ public class Work1Plus {
 
             System.out.println("Результат сложения: " + (numb + nText));
         }
+        //2
+        {
+            int a = 3;
+            int b = 5;
+
+            int c = (a + b)^2; // ^ - знак не понятен
+
+            System.out.println("Результат: " + c);
+        }
     }
 }
