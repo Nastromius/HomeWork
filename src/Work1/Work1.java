@@ -55,7 +55,22 @@ public class Work1 {
             }
         }
 
+        //Задача №5
+        {
+            System.out.println("Введите возраст ребёнка: ");
+            int age = scanner.nextInt();
 
+            if (age < 6)
+                System.out.println("Ребёнок идёт в сад");
 
+            else if (6 < age && age < 11)
+                System.out.println("Идёт в младшую школу");
+
+            else if (11 < age && age < 17)
+                System.out.println("Идёт в среднюю школу");
+
+            else
+                System.out.println("Идёт в институт");
+        }
     }
 }
