@@ -6,8 +6,8 @@ public class Work1 {
 
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        //Базовый уровень
-        /* //Задача №1
+        //Р‘Р°Р·РѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ
+         //Р—Р°РґР°С‡Р° в„–1
         {
             String hi = "                Hello ";
             String world = " WoRld!";
@@ -20,19 +20,19 @@ public class Work1 {
             System.out.print(nWord.repeat(3));
         }
 
-        //Задача №2
+        //Р—Р°РґР°С‡Р° в„–2
         {
-            System.out.println("\nВведите рост в метрах. Через запятую");
+            System.out.println("\nР’РІРµРґРёС‚Рµ СЂРѕСЃС‚ РІ РјРµС‚СЂР°С…. Р§РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ");
             float growth = scanner.nextFloat();
 
-            System.out.println("Введите вес");
+            System.out.println("Р’РІРµРґРёС‚Рµ РІРµСЃ");
             float weight = scanner.nextFloat();
 
             float bodyMassIndex = weight / (growth * growth);
-            System.out.println("Индекса массы тела " + bodyMassIndex);
+            System.out.println("РРЅРґРµРєСЃР° РјР°СЃСЃС‹ С‚РµР»Р° " + bodyMassIndex);
         }
 
-        //Задача №3
+        //Р—Р°РґР°С‡Р° в„–3
         {
             char[] chr = {'a', 'b', 'c', 'd', 'e'};
 
@@ -45,7 +45,7 @@ public class Work1 {
             System.out.println(str2);
         }
 
-        //Задача №4
+        //Р—Р°РґР°С‡Р° в„–4
         {
             for (int i = 1; i <= 100 ; i++) {
                 System.out.print(i + "a ");
@@ -54,23 +54,23 @@ public class Work1 {
                     System.out.println();
             }
         }
-        */
-        //Задача №5
+
+        //Р—Р°РґР°С‡Р° в„–5
         {
-            System.out.println("Введите возраст ребёнка: ");
+            System.out.println("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ СЂРµР±С‘РЅРєР°: ");
             int age = scanner.nextInt();
 
             if (age <= 6)
-                System.out.println("Ребёнок идёт в сад");
+                System.out.println("Р РµР±С‘РЅРѕРє РёРґС‘С‚ РІ СЃР°Рґ");
 
             else if (age <= 11)
-                System.out.println("Идёт в младшую школу");
+                System.out.println("РРґС‘С‚ РІ РјР»Р°РґС€СѓСЋ С€РєРѕР»Сѓ");
 
             else if (age <= 17)
-                System.out.println("Идёт в среднюю школу");
+                System.out.println("РРґС‘С‚ РІ СЃСЂРµРґРЅСЋСЋ С€РєРѕР»Сѓ");
 
             else
-                System.out.println("Идёт в институт");
+                System.out.println("РРґС‘С‚ РІ РёРЅСЃС‚РёС‚СѓС‚");
         }
     }
 }
