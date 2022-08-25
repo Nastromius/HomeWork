@@ -12,6 +12,7 @@ public class Work1Plus {
 
             System.out.println("Результат сложения: " + (numb + nText));
         }
+
         //2
         {
             int a = 3;
@@ -20,6 +21,27 @@ public class Work1Plus {
             int c = (a + b)^2; // ^ - знак не понятен
 
             System.out.println("Результат: " + c);
+        }
+
+        //3
+        {
+            int [] oneArray = {1,2,5,7,10};
+            int [] twoArray = {2,3,2,17,15};
+            int [] threeArray = new int[5];
+
+            int [] newArray = new int [oneArray.length + twoArray.length + twoArray.length];
+            for (int i = 0; i < threeArray.length; i++) {
+                threeArray[i] = oneArray[i]*twoArray[i];
+            }
+            int arLength = oneArray.length + twoArray.length;
+
+            System.arraycopy(oneArray, 0, newArray, 0, oneArray.length); // Гугл был в помощь
+            System.arraycopy(twoArray, 0, newArray, oneArray.length, twoArray.length);
+            System.arraycopy(threeArray, 0, newArray, arLength, threeArray.length );
+
+            for (int i = 0; i < newArray.length; i++)
+                System.out.print(newArray[i] + " ");
+            System.out.println();
         }
     }
 }
