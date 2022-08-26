@@ -43,5 +43,15 @@ public class Work1Plus {
                 System.out.print(newArray[i] + " ");
             System.out.println();
         }
+
+        //4
+        {
+            String strg = "Hello world!";
+            String strg2 = strg.replace("l","r");
+            String strg3 = strg2.toUpperCase();
+            String strLost = strg3.substring(0,8);
+
+            System.out.println(strLost);
+        }
     }
 }
