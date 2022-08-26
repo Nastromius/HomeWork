@@ -53,5 +53,21 @@ public class Work1Plus {
 
             System.out.println(strLost);
         }
+
+        //5
+        {
+            double increment = 0.01123;
+            double result = 0;
+            int end = 1000000;
+            int count = 0;
+
+            for (; result < end;) {
+                if (result < 0)
+                    break;;
+                    result += increment;
+                    count++;
+            }
+            System.out.println("Количество итераций до миллиона " + count);
+        }
     }
 }
