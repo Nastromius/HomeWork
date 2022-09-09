@@ -20,7 +20,7 @@ package Work2;
 
 public class HomeWork2 {
     public static void main(String[] args) {
-        {
+
             Wolf wolf = new Wolf("Серый", "Людовик");
             wolf.descriptionWolf();
             wolf.getHealthWolf();
@@ -34,7 +34,7 @@ public class HomeWork2 {
             ram.getWoolRam();
             ram.setHaircutRam(true);
             ram.getWoolRam();
-        }
+
 
         System.out.println();
 
